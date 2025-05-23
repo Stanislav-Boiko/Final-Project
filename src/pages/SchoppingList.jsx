@@ -6,7 +6,6 @@ export default function SchoppingList() {
       style={{
         background: "#ffe082",
         minHeight: "60vh",
-        border: "2px solid #ffb300",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",

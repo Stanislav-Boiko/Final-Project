@@ -30,7 +30,6 @@ function Footer() {
     <FooterWrapper>
       <FooterContainer>
         <BtnLink to="/news">Новини</BtnLink>
-        <BtnLink to="/profil">Профіль</BtnLink>
         <BtnLink to="/menu">Меню</BtnLink>
         <BtnLink to="/pantry">Кладова</BtnLink>
         <BtnLink to="/shopping-list">Список</BtnLink>
