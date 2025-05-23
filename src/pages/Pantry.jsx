@@ -4,9 +4,8 @@ export default function Pantry() {
   return (
     <div
       style={{
-        background: "#b2dfdb",
+        background: "#94c4c0",
         minHeight: "60vh",
-        border: "2px solid #00897b",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -14,7 +13,7 @@ export default function Pantry() {
         fontSize: "1.5rem",
       }}
     >
-      Контейнер сторінки Pantry (ширина: 100%, висота: min 60vh)
+      <h1>Кладова</h1>
     </div>
   );
 }

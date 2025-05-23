@@ -1,28 +1,41 @@
 import React from 'react';
-import './Footer.scss';
-import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
+import { BtnLink } from '../Button/Button';
+
+const FooterWrapper = styled.div`
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  max-width: 425px;
+  z-index: 1000;
+  border-radius: 0 0 12px 12px;
+  background: transparent;
+  height: 64px;
+  display: flex;
+  align-items: stretch;
+`;
+
+const FooterContainer = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+`;
 
 function Footer() {
   return (
-    <div className='footer'>
-      <div className='footer__container'>
-        <NavLink to="/menu" className="footer__btn">
-          <span>Меню</span>
-        </NavLink>
-        <NavLink to="/pantry" className="footer__btn">
-          <span>Pantry</span>
-        </NavLink>
-        <NavLink to="/shopping-list" className="footer__btn">
-          <span>List</span>
-        </NavLink>
-        <NavLink to="/news" className="footer__btn">
-          <span>News</span>
-        </NavLink>
-        <NavLink to="/profil" className="footer__btn">
-          <span>Профіль</span>
-        </NavLink>
-      </div>
-    </div>
+    <FooterWrapper>
+      <FooterContainer>
+        <BtnLink to="/news">Новини</BtnLink>
+        <BtnLink to="/profil">Профіль</BtnLink>
+        <BtnLink to="/menu">Меню</BtnLink>
+        <BtnLink to="/pantry">Кладова</BtnLink>
+        <BtnLink to="/shopping-list">Список</BtnLink>
+      </FooterContainer>
+    </FooterWrapper>
   );
 }
 

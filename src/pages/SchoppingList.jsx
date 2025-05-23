@@ -14,7 +14,7 @@ export default function SchoppingList() {
         fontSize: "1.5rem",
       }}
     >
-      Контейнер сторінки SchoppingList (ширина: 100%, висота: min 60vh)
+      <h1>Список</h1>
     </div>
   );
 }

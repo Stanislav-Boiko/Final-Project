@@ -4,9 +4,8 @@ export default function News() {
   return (
     <div
       style={{
-        background: "#bbdefb",
+        background: "#b8c1a5",
         minHeight: "60vh",
-        border: "2px solid #1976d2",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -14,7 +13,7 @@ export default function News() {
         fontSize: "1.5rem",
       }}
     >
-      Контейнер сторінки News (ширина: 100%, висота: min 60vh)
+      <h1>Новини</h1>
     </div>
   );
 }
